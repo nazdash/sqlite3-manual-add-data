@@ -28,4 +28,4 @@ def insert_user(email, name, password, database):
   new_user = (email, name, pswh)
   cur.execute(sql, new_user)
   con.commit()
-  return cur.lastrowid
+  return 'user added'
